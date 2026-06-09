@@ -1,0 +1,7 @@
+TEAM_ID=
+
+PRODUCT_NAME=ComposeBoilerPlatform
+PRODUCT_BUNDLE_IDENTIFIER=com.nsicyber.composeboilerplatform.ComposeBoilerPlatform$(TEAM_ID)
+
+CURRENT_PROJECT_VERSION=1
+MARKETING_VERSION=1.0
