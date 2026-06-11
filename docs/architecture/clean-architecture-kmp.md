@@ -11,6 +11,7 @@ This project follows a hybrid KMP modular strategy:
 - `core:*`  
   Shared contracts and platform-backed providers used by multiple features.
   Example: `core:network` exposes synchronous `NetworkMonitor` and reactive `ConnectivityManager`.
+  Example: `core:audio-player` exposes a ready-to-use `AudioRepository` with Android+iOS engines.
 
 - `feature:*:domain`  
   Business models, repository contracts, and use cases. No platform dependencies.

@@ -14,6 +14,7 @@ kotlin {
 dependencies {
     implementation(projects.sharedUi)
     implementation(projects.sharedLogic.core.network)
+    implementation(projects.sharedLogic.core.audioPlayer)
 
     implementation(libs.androidx.activity.compose)
 

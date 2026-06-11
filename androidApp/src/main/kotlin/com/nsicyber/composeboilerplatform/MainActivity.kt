@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.nsicyber.composeboilerplatform.sharedlogic.core.audioplayer.initializePlatformAudio
 import com.nsicyber.composeboilerplatform.sharedlogic.core.network.initializePlatformConnectivity
 import com.nsicyber.composeboilerplatform.sharedui.AppRoot
 
@@ -14,6 +15,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         initializePlatformConnectivity(applicationContext)
+        initializePlatformAudio(applicationContext)
 
         setContent {
             AppRoot()
