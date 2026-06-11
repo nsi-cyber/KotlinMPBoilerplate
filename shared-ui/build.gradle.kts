@@ -37,6 +37,7 @@ kotlin {
             implementation(libs.compose.material3)
             implementation(libs.compose.ui)
             implementation(libs.compose.uiToolingPreview)
+            implementation(libs.jetbrains.navigation3.ui)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
