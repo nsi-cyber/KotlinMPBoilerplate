@@ -5,10 +5,10 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
+import androidx.compose.material3.Text
 import androidx.compose.ui.tooling.preview.Preview
 import com.nsicyber.composeboilerplatform.sharedlogic.core.audioplayer.initializePlatformAudio
 import com.nsicyber.composeboilerplatform.sharedlogic.core.network.initializePlatformConnectivity
-import com.nsicyber.composeboilerplatform.sharedui.AppRoot
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         initializePlatformAudio(applicationContext)
 
         setContent {
-            AppRoot()
+            CoreHostContent()
         }
     }
 }
@@ -26,5 +26,10 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun AppAndroidPreview() {
-    AppRoot()
+    CoreHostContent()
+}
+
+@Composable
+private fun CoreHostContent() {
+    Text("Core module host app")
 }

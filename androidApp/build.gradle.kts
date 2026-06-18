@@ -12,11 +12,10 @@ kotlin {
     }
 }
 dependencies {
-    implementation(projects.sharedUi)
-    implementation(projects.sharedLogic.core.network)
-    implementation(projects.sharedLogic.core.audioPlayer)
+    implementation(projects.core)
 
     implementation(libs.androidx.activity.compose)
+    implementation(libs.compose.material3)
 
     implementation(libs.compose.uiToolingPreview)
     debugImplementation(libs.compose.uiTooling)

@@ -29,12 +29,4 @@ dependencyResolutionManagement {
 }
 
 include(":androidApp")
-include(":shared-ui")
-include(":shared-logic:core:common")
-include(":shared-logic:core:presentation")
-include(":shared-logic:core:network")
-include(":shared-logic:core:database")
-include(":shared-logic:core:audio-player")
-include(":shared-logic:feature:home:domain")
-include(":shared-logic:feature:home:data")
-include(":shared-logic:feature:home:presentation")
+include(":core")
